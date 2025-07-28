@@ -1,0 +1,11 @@
+/* src/index.css */
+/* If you are not using a build tool like PostCSS with Tailwind, replace the @tailwind directives with the compiled Tailwind CSS output. 
+   Otherwise, make sure your build process is set up to process Tailwind CSS. 
+   Example below assumes you are not using a build tool: */
+
+/* Tailwind Preflight (base styles) */
+@import "tailwindcss/base.css";
+/* Tailwind Components */
+@import "tailwindcss/components.css";
+/* Tailwind Utilities */
+@import "tailwindcss/utilities.css";
