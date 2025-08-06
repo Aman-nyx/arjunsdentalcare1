@@ -9,15 +9,15 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<ImageType | null>(null);
 
   const images: ImageType[] = [
-    { label: "Image 1", url: "/gallery/image1.webp" },
-    { label: "Image 2", url: "/gallery/image2.webp" },
-    { label: "Image 3", url: "/gallery/image3.webp" },
-    { label: "Image 4", url: "/gallery/image4.webp" },
-    { label: "Image 5", url: "/gallery/image5.webp" },
-    { label: "Image 6", url: "/gallery/image6.webp" },
-    { label: "Image 7", url: "/gallery/image7.webp" },
-    { label: "Image 8", url: "/gallery/image8.webp" },
-    { label: "Image 9", url: "/gallery/image9.webp" },
+    { label: "Image 1", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image1.webp" },
+    { label: "Image 2", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image2.webp" },
+    { label: "Image 3", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image3.webp" },
+    { label: "Image 4", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image4.webp" },
+    { label: "Image 5", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image5.webp" },
+    { label: "Image 6", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image6.webp" },
+    { label: "Image 7", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image7.webp" },
+    { label: "Image 8", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image8.webp" },
+    { label: "Image 9", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image9.webp" },
   ];
   useEffect(() => {
     if (!selectedImage) {
