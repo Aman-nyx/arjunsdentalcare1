@@ -20,9 +20,9 @@ const Doctor: React.FC = () => {
           {/* Image Section */}
           <div className="relative">
             <img
-              src="/doctors/image1.webp"
+              src="https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/doctor.webp"
               alt="Dr. Arjun A R"
-              className="w-full h-full object-cover object-center"
+              className="w-[400px] h-[400px] object-cover object-center mx-auto"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
           </div>
