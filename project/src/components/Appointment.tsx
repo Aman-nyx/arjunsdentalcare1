@@ -105,8 +105,8 @@ const Appointment = () => {
               any specific needs or concerns.
             </p>
             <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors mb-4 w-full">
-              <a href="tel:07259744662" className="block">
-                072597 44662
+              <a href="tel:919544662033" className="block">
+                (+91) 9544662033
               </a>
             </button>
             <div className="flex items-center justify-center text-sm text-gray-500">

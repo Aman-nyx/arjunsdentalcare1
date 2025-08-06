@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DoctorHighlight: React.FC = () => {
+const Doctor: React.FC = () => {
   return (
     <section
       id="doctor-highlight"
@@ -36,7 +36,7 @@ const DoctorHighlight: React.FC = () => {
             <p className="text-blue-600 font-semibold text-sm mb-2">
               BDS, MDS (Conservative Dentistry & Endodontics)
             </p>
-            <p className=" container mx-auto text-gray-700 text-base font-medium leading-relaxed">
+            <p className="text-gray-700 text-base font-medium leading-relaxed">
               With over 9 years of experience, Dr. Arjun excels in advanced endodontic treatments,
               ensuring precise and pain-free dental care. Doctor has successfully handled many procedures including root canal treatments, restorative work, and emergency care.
             </p>
@@ -48,4 +48,4 @@ const DoctorHighlight: React.FC = () => {
   );
 };
 
-export default DoctorHighlight;
+export default Doctor;
