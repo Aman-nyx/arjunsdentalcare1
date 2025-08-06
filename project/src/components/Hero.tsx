@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Image */}
       <div className="w-full h-[300px] sm:h-[500px] lg:h-screen relative">
         <img
-          src="/heropic.png"
+          src="/heropic.webp"
           alt="Dental Team"
           className="w-full h-full object-contain sm:object-cover"
         />

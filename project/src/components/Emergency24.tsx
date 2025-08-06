@@ -8,7 +8,7 @@ const Emergency24 = () => {
             <div className="w-32 h-32 rounded-full bg-[#3B82F6] flex items-center justify-center">
               <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center">
                 <img 
-                  src="/below hero/24.png" 
+                  src="/below hero/24.webp" 
                   alt="24/7 Emergency Service" 
                   className="w-24 h-24 object-cover rounded-full ml-1"
                 />
@@ -29,7 +29,7 @@ const Emergency24 = () => {
               <div className="w-20 h-20 rounded-full mx-auto mb-4 bg-[#3B82F6] flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center">
                   <img 
-                    src="/below hero/emergency.png" 
+                    src="/below hero/emergency.webp" 
                     alt="Emergency Ready" 
                     className="w-12 h-12 object-cover rounded-full"
                   />
@@ -46,7 +46,7 @@ const Emergency24 = () => {
               <div className="w-20 h-20 rounded-full mx-auto mb-4 bg-[#3B82F6] flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center">
                   <img 
-                    src="/below hero/care.png" 
+                    src="/below hero/care.webp" 
                     alt="Compassionate Care" 
                     className="w-14 h-14 object-contain rounded-full"
                   />
@@ -63,7 +63,7 @@ const Emergency24 = () => {
               <div className="w-20 h-20 rounded-full mx-auto mb-4 bg-[#3B82F6] flex items-center justify-center">
                 <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center">
                   <img 
-                    src="/below hero/always.png" 
+                    src="/below hero/always.webp" 
                     alt="Always Available" 
                     className="w-14 h-14 object-contain rounded-full"
                   />
