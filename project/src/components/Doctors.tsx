@@ -1,9 +1,8 @@
-import React from 'react';
 
-const Doctor: React.FC = () => {
+const doctors = () => {
   return (
     <section
-      id="doctor-highlight"
+      id="doctors"
       className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#e0f2fe] to-[#bae6fd]"
     >
       <div className="max-w-6xl mx-auto">
@@ -48,4 +47,4 @@ const Doctor: React.FC = () => {
   );
 };
 
-export default Doctor;
+export default doctors;
