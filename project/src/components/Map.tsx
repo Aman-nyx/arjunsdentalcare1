@@ -13,9 +13,9 @@ const Map = () => {
           </p>
         </div>
 
-<div className="grid lg:grid-cols-2 gap-8">
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
   {/* Map Section */}
-  <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+  <div className="bg-white rounded-2xl shadow-lg overflow-hidden container mx-auto">
     <div className="h-96 bg-gray-200 relative">
       {/* Replace this div with your Google Maps embed code */}
       <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-lg">
