@@ -44,8 +44,8 @@ const Map = () => {
                 <div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Our Address</h3>
                   <p className="text-gray-600">UARRA-22</p>
-                  <p className="text-gray-600">tc 7,2008,Ulloor - Akkulam Rd</p>
-                  <p className="text-gray-600">Thiruvananthapuram,Kerala 695011</p>
+                  <p className="text-gray-600">tc/7,2008, Ulloor-Akkulam Rd</p>
+                  <p className="text-gray-600">Thiruvananthapuram, Kerala, 695011</p>
                 </div>
               </div>
             </div>
@@ -59,21 +59,21 @@ const Map = () => {
                 <div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Contact Information</h3>
                   <p className="text-gray-600">
-                    <span className="font-medium">Phone: 072597 44662</span> 
-                    <a href="tel:+15551234567" className="ml-1 hover:text-blue-600 transition-colors">
-                      
+                    <span className="font-medium">Phone:</span> 
+                    <a href="tel:919495974446" className="ml-1 hover:text-blue-600 transition-colors">
+                    (+91) 9495974446
                     </a>
                   </p>
                   <p className="text-gray-600">
                     <span className="font-medium">Emergency:</span> 
-                    <a href="tel:+15551234567" className="ml-1 hover:text-blue-600 transition-colors">
-                      072597 44662
+                    <a href="tel:91725974462" className="ml-1 hover:text-blue-600 transition-colors">
+                      (+91) 7259744662
                     </a>
                   </p>
                   <p className="text-gray-600">
                     <span className="font-medium">Email:</span> 
-                    <a href="mailto:info@dentalclinic.com" className="ml-1 hover:text-blue-600 transition-colors">
-                      arjundentalclinic@gmail.com
+                    <a href="mailto:arjunspecialitydentalcare@gmail.com" className="ml-1 hover:text-blue-600 transition-colors">
+                      arjunspecialitydentalcare@gmail.com
                     </a>
                   </p>
                 </div>

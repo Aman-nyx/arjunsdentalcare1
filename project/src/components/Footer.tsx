@@ -15,7 +15,7 @@ const Footer = () => {
 
               <div>
                 <h3 className="text-xl font-bold">ARJUN'S</h3>
-                <p className="text-sm text-gray-400">multiSpeciality Dental Clinic</p>
+                <p className="text-sm text-gray-400">multiSpeciality Dental Care</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
@@ -35,23 +35,24 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-[#7DD3FC] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">UARRA-22</p>
-                  <p className="text-gray-300">tc 7,2008,Ulloor - Akkulam Rd</p>
-                  <p className="text-gray-300">Thiruvananthapuram,Kerala 695011</p>
+                  <p className="text-gray-300">tc/7,2008, Ulloor-Akkulam Rd</p>
+                  <p className="text-gray-300">Thiruvananthapuram, Kerala 695011</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#7DD3FC] flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">072597 44662</p>
+                  <p className="text-gray-300">+91 9544662033</p>
+                  <p className="text-gray-300">+91 7259744662</p>
                   <p className="text-[#7DD3FC] text-sm">24/7 Emergency Line</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#7DD3FC] flex-shrink-0" />
-                <a href="mailto:arjundentalclinic@gmail.com" className="text-gray-300 hover:text-[#7DD3FC] transition-colors">
-                  arjundentalclinic@gmail.com
+                <a href="mailto:arjunspecialitydentalcare@gmail.com" className="text-gray-300 hover:text-[#7DD3FC] transition-colors">
+                  arjunspecialitydentalcare@gmail.com
                 </a>
               </div>
             </div>
@@ -95,7 +96,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Arjun's Multispeciality Dental Clinic. All rights reserved.
+              © 2025 Arjun's Multispeciality Dental Care. All rights reserved.
             </p>
           </div>
         </div>
