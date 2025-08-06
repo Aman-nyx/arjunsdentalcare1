@@ -70,12 +70,16 @@ const Map = () => {
                       (+91) 7259744662
                     </a>
                   </p>
-                  <p className="text-gray-600">
-                    <span className="font-medium">Email:</span> 
-                    <a href="mailto:arjunspecialitydentalcare@gmail.com" className="ml-1 hover:text-blue-600 transition-colors">
-                      arjunspecialitydentalcare@gmail.com
-                    </a>
-                  </p>
+                   <p className="text-gray-600 text-sm sm:text-base break-words">
+  <span className="font-medium">Email:</span><br className="block sm:hidden" />
+  <a
+    href="mailto:arjunspecialitydentalcare@gmail.com"
+    className="hover:text-blue-600 transition-colors break-words"
+  >
+   &nbsp;arjunspecialitydentalcare@gmail.com
+  </a>
+</p>
+
                 </div>
               </div>
             </div>
