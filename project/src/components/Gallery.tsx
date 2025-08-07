@@ -7,7 +7,7 @@ const Gallery = () => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const userInteractedRef = useRef(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [ok, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<ImageType | null>(null);
 
   const images: ImageType[] = [
