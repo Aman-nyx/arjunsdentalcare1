@@ -44,7 +44,7 @@ const Map = () => {
                 <div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Our Address</h3>
                   <p className="text-gray-600">UARRA-22</p>
-                  <p className="text-gray-600">tc/7,2008, Ulloor-Akkulam Rd</p>
+                  <p className="text-gray-600">tc 7/2008, Ulloor-Akkulam Rd</p>
                   <p className="text-gray-600">Thiruvananthapuram, Kerala, 695011</p>
                 </div>
               </div>

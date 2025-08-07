@@ -35,7 +35,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-[#7DD3FC] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">UARRA-22</p>
-                  <p className="text-gray-300">tc/7,2008, Ulloor-Akkulam Rd</p>
+                  <p className="text-gray-300">tc 7/2008, Ulloor-Akkulam Rd</p>
                   <p className="text-gray-300">Thiruvananthapuram, Kerala 695011</p>
                 </div>
               </div>

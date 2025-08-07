@@ -36,7 +36,7 @@ const doctors = () => {
               BDS, MDS (Conservative Dentistry & Endodontics)
             </p>
             <p className="text-gray-700 text-base font-medium leading-relaxed">
-              With over 9 years of experience, Dr. Arjun excels in advanced endodontic treatments,
+              Dr. Arjun excels in advanced endodontic treatments,
               ensuring precise and pain-free dental care. Doctor has successfully handled many procedures including root canal treatments, restorative work, and emergency care.
             </p>
             <div className="h-1 mt-4 bg-gradient-to-r from-blue-500 to-purple-600 transform scale-x-0 hover:scale-x-100 transition-transform duration-300 origin-left" />
