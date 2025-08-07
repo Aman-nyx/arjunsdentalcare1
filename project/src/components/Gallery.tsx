@@ -4,7 +4,9 @@ type ImageType = { label: string; url: string };
 
 const Gallery = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
-  const intervalRef = useRef<number | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const userInteractedRef = useRef(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<ImageType | null>(null);
 
@@ -19,38 +21,57 @@ const Gallery = () => {
     { label: "Image 8", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image8.webp" },
     { label: "Image 9", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image9.webp" },
   ];
+
+  const scrollToIndex = (index: number) => {
+    if (!scrollRef.current) return;
+    const container = scrollRef.current;
+    const item = container.children[index] as HTMLElement;
+    if (!item) return;
+    const itemWidth = item.offsetWidth;
+    const scrollTo = item.offsetLeft - (container.offsetWidth - itemWidth) / 2;
+
+    container.scrollTo({
+      left: scrollTo,
+      behavior: "smooth",
+    });
+  };
+
+  const startAutoScroll = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prev) => {
+        const next = (prev + 1) % images.length;
+        scrollToIndex(next);
+        return next;
+      });
+    }, 1500);
+  };
+
+  const stopAutoScroll = () => {
+    userInteractedRef.current = true;
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  };
+
+  const resumeAutoScroll = () => {
+    timeoutRef.current = setTimeout(() => {
+      userInteractedRef.current = false;
+      startAutoScroll();
+    }, 3000);
+  };
+
   useEffect(() => {
     if (!selectedImage) {
-      intervalRef.current = window.setInterval(() => {
-        if (scrollRef.current) {
-          const container = scrollRef.current;
-          const item = container.children[currentIndex] as HTMLElement;
-          if (!item) return;
-          const itemWidth = item.offsetWidth;
-          const scrollTo =
-            item.offsetLeft - (container.offsetWidth - itemWidth) / 2;
-
-          container.scrollTo({
-            left: scrollTo,
-            behavior: "smooth",
-          });
-
-          setCurrentIndex((prev) => (prev + 1) % images.length);
-        }
-      }, 3000);
+      startAutoScroll();
     }
-
     return () => {
-      if (intervalRef.current !== null) {
-        clearInterval(intervalRef.current);
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
-  }, [currentIndex, selectedImage]);
+  }, [selectedImage]);
 
   const closePopup = () => {
     setSelectedImage(null);
-    // Resume auto-scroll
-    setCurrentIndex((prev) => prev);
   };
 
   return (
@@ -66,10 +87,14 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Mobile Slider */}
+        {/* Mobile Auto-scroll Slider */}
         <div
           ref={scrollRef}
           className="flex sm:hidden gap-4 overflow-x-auto scroll-smooth px-4 py-6 snap-x snap-mandatory"
+          onTouchStart={stopAutoScroll}
+          onTouchEnd={resumeAutoScroll}
+          onMouseDown={stopAutoScroll}
+          onMouseUp={resumeAutoScroll}
         >
           {images.map((img, idx) => (
             <div
@@ -127,10 +152,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-// This code defines a Gallery component that displays a collection of images in a responsive layout.
-// It includes a mobile slider for smaller screens and a grid layout for larger screens.
-// The component also features an auto-scroll functionality that cycles through the images every 3 seconds.
-// When an image is clicked, it opens a popup displaying the image in a larger view.
-// The popup can be closed by clicking a close button, which also resumes the auto-scroll functionality.
-// The images are sourced from a random image API, and the component is styled using Tailwind CSS classes for a modern look.
-// The gallery is designed to be user-friendly, with smooth transitions and a clean layout that highlights the images effectively.
