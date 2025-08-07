@@ -24,7 +24,7 @@ const Appointment = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
-              href="tel:07259744662"
+              href="tel:+91 7259744662"
               className="w-full max-w-[300px] sm:max-w-[none] sm:w-auto"
               >
               <button
@@ -35,7 +35,7 @@ const Appointment = () => {
                 <Phone className="w-5 h-5" />
                 <div>
                 <div className="text-sm">Emergency Hotline</div>
-                <div className="font-bold">072597 44662</div>
+                <div className="font-bold">+91 7259744662</div>
                 </div>
               </button>
               </a>
