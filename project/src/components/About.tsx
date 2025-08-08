@@ -17,7 +17,8 @@ const About = () => {
             </div>
             <div className="w-full h-[520px] overflow-hidden rounded-2xl shadow-lg">
               <img 
-                src="https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image8.webp" 
+                src="https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image8.webp
+" 
                 alt="Modern dental clinic interior" 
                 className="w-full h-full object-cover object-[center_30%]"
               />

@@ -11,15 +11,15 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<ImageType | null>(null);
 
   const images: ImageType[] = [
-    { label: "Image 1", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image1.webp" },
-    { label: "Image 2", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image2.webp" },
-    { label: "Image 3", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image3.webp" },
-    { label: "Image 4", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image4.webp" },
-    { label: "Image 5", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image5.webp" },
-    { label: "Image 6", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image6.webp" },
-    { label: "Image 7", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image7.webp" },
-    { label: "Image 8", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image8.webp" },
-    { label: "Image 9", url: "https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/image9.webp" },
+    { label: "Image 1", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image1.webp" },
+    { label: "Image 2", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image2.webp" },
+    { label: "Image 3", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image3.webp" },
+    { label: "Image 4", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image4.webp" },
+    { label: "Image 5", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image5.webp" },
+    { label: "Image 6", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image6.webp" },
+    { label: "Image 7", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image7.webp" },
+    { label: "Image 8", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image8.webp" },
+    { label: "Image 9", url: "https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/image9.webp" },
   ];
 
   const scrollToIndex = (index: number) => {

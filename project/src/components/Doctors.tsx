@@ -19,7 +19,7 @@ const doctors = () => {
           {/* Image Section */}
           <div className="relative">
             <img
-              src="https://raw.githubusercontent.com/Aman-nyx/arjunsdentalcare1/main/gallery/doctor.webp"
+              src="https://raw.githubusercontent.com/Arjundentalcare/arjunmultispecialitydentalcare/master/gallery/doctor.webp"
               alt="Dr. Arjun A R"
               className="w-[400px] h-[400px] object-cover object-center mx-auto"
             />
