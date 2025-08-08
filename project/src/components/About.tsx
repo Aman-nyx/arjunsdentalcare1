@@ -30,7 +30,7 @@ const About = () => {
               About Our <span className="text-[#7DD3FC]">Dental Clinic</span>
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              With over 15 years of excellence in dental care, our clinic combines 
+              Our clinic combines 
               cutting-edge technology with compassionate treatment. We're 
               committed to providing comprehensive dental services in a 
               comfortable, modern environment that puts our patients at ease.
