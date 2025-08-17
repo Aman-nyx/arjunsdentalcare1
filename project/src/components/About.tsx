@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
-          {/* Left side: Images */}
+          {/* Left siide: Images */}
           <div className="space-y-6">
             <div className="w-full h-[520px] overflow-hidden rounded-2xl shadow-lg">
               <img 
